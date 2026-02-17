@@ -11,6 +11,13 @@ dependencies = [
 [project.scripts]
 start = "VD_games.scripts.VD_main:main"
 VD-games = "VD_games.scripts.VD_games:main"
+VD-even = "VD_games.scripts.VD_even:main"
 
 [tool.uv]
 package = true
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.1",
+]
+
